@@ -1,6 +1,16 @@
 # customers.py
 # Camdyn Schatz
 # Module 11 Lab: Customer Dictionary & Lookup
+# SELF ASSESSMENT QUESTIONS
+# 1. You would use bracket notation to access a value in a dictionary when you are certain
+# that that they key is in that dictionary. You would use the .get() when you are not
+# certain if it is in the dictionary. You would use bracket notation when you want to
+# add a new key-value pair. You would use the .get() when dealing with unpredictable
+# or user-generated data.
+
+# 2. This reminds me of excel because it works exactly like a table. Python is better 
+# because it is more flexible while excel is more rigid and slows down when you are 
+# using larger datasets. 
 
 from dbm import error
 
@@ -103,3 +113,4 @@ print(sales_by_region)
 
 for region in sorted(sales_by_region):
     print(f"{region}: ${sales_by_region[region]:.2f}")
+
